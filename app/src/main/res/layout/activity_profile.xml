@@ -1,0 +1,176 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/profileScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#111111"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:id="@+id/profileContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Top Bar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingBottom="24dp">
+
+            <ImageView
+                android:id="@+id/backButton"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_arrow_back"
+                app:tint="#FFFFFF" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Profile"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/supportButton"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_support"
+                app:tint="#FFFFFF" />
+        </LinearLayout>
+
+        <!-- Profile Info -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingBottom="16dp">
+
+            <ImageView
+                android:id="@+id/profileImage"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/aavatar"
+                android:scaleType="centerCrop"
+                android:background="@drawable/circle_bg"
+                android:padding="2dp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingStart="16dp">
+
+                <TextView
+                    android:id="@+id/userName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="andaz Kumar"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/memberSince"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="member since Dec, 2020"
+                    android:textColor="#AAAAAA"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/editProfile"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_edit"
+                app:tint="#AAAAAA" />
+        </LinearLayout>
+
+        <!-- Promo Card -->
+        <LinearLayout
+            android:id="@+id/garagePromo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#1E1E1E"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:layout_marginBottom="24dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_car"
+                app:tint="#FFFFFF" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingStart="12dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:text="get to know your vehicles, inside out"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"/>
+
+                <TextView
+                    android:text="CRED garage →"
+                    android:textColor="#00FFAA"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Metrics -->
+
+
+        <!-- Rewards -->
+        <TextView
+            android:text="YOUR REWARDS BENEFITS"
+            android:textColor="#AAAAAA"
+            android:textSize="12sp"
+            android:paddingTop="24dp"
+            android:paddingBottom="8dp"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"/>
+
+
+
+        <!-- Transactions -->
+        <TextView
+            android:text="@string/transactions_support"
+            android:textColor="#AAAAAA"
+            android:textSize="12sp"
+            android:paddingTop="24dp"
+            android:paddingBottom="8dp"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent" />
+
+
+        <TextView
+            android:id="@+id/allTransactions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/all_transactions"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:padding="8dp"
+            />
+    </LinearLayout>
+</ScrollView>
